@@ -56,7 +56,7 @@ def infer(args):
         }
 
         fetches = [
-            sess.graph.get_tensor_by_name('SparseToDense:0'),  # dense_decoded
+            sess.graph.get_tensor_by_name('output:0'),  # dense_decoded
             sess.graph.get_tensor_by_name('Mean_1:0'),  # mean edit distance
             sess.graph.get_tensor_by_name('edit_distance:0')  # batch edit distances
         ]

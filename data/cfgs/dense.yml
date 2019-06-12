@@ -11,7 +11,7 @@ lr_decay_rate: 0.8
 # adadelate, adam, rms
 optimizer: adadelate
 
-use_lstm: true
+use_lstm: false
 num_lstm_layer: 2
 rnn_keep_prob: 0.8
 rnn_num_units: 256

@@ -30,7 +30,7 @@ def parse_args(infer=False):
 
     parser.add_argument('--gpu', action='store_true', default=False)
     parser.add_argument('--restore', action='store_true', help='Whether to resotre checkpoint from ckpt_dir')
-    parser.add_argument('--tag', default='default', help='Subdirectory to create in checkpoint_dir/log_dir/result_dir')
+    parser.add_argument('--tag', default='2019_06_12', help='Subdirectory to create in checkpoint_dir/log_dir/result_dir')
     parser.add_argument('--ckpt_dir', default='./output/checkpoint', help='Directory to save tensorflow checkpoint')
     parser.add_argument('--log_dir', default='./output/log', help='Directory to save tensorboard logs')
     parser.add_argument('--result_dir', default='./output/result', help='Directory to save val/test result')
