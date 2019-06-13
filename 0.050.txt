@@ -1,0 +1,121 @@
+00000000
+input:   。。同时这个故事也是        length: 10
+predict: 。。同时太这个是，凡        length: 10
+all match:  0
+edit distance:  0.5
+------------------------------
+00000001
+input:   颗不被人注意的小小的        length: 10
+predict: 冗都大               length: 3
+all match:  0
+edit distance:  1.0
+------------------------------
+00000002
+input:   冗长，并且包含许多虚        length: 10
+predict: 都惨，包是             length: 5
+all match:  0
+edit distance:  0.800000011920929
+------------------------------
+00000003
+input:   而，这绝对是一本非凡        length: 10
+predict: 都凡最同臂。这凡          length: 8
+all match:  0
+edit distance:  0.8999999761581421
+------------------------------
+00000004
+input:   大部分的居民在大部分        length: 10
+predict: 惨是部分              length: 4
+all match:  0
+edit distance:  0.800000011920929
+------------------------------
+00000005
+input:   果的故事，这个关于这        length: 10
+predict: ，是一惨未非            length: 6
+all match:  0
+edit distance:  0.8999999761581421
+------------------------------
+00000006
+input:   的黄色太阳。距离它大        length: 10
+predict: 但黄旋太阳。也离它颗大       length: 11
+all match:  0
+edit distance:  0.4000000059604645
+------------------------------
+00000007
+input:   惨惨，甚至包括那些拥        length: 10
+predict: 冗而惨包一离拥故          length: 8
+all match:  0
+edit distance:  0.8999999761581421
+------------------------------
+00000008
+input:   ，这不是一本地球上的        length: 10
+predict: 冗一本地绝本球上          length: 8
+all match:  0
+edit distance:  0.699999988079071
+------------------------------
+00000009
+input:   过这与我们这里要讲的        length: 10
+predict: 过种这里的             length: 5
+all match:  0
+edit distance:  0.6000000238418579
+------------------------------
+00000010
+input:   都是紧紧围绕那些绿色        length: 10
+predict: 版。一               length: 3
+all match:  0
+edit distance:  1.0
+------------------------------
+00000011
+input:   可以说是凄凄惨惨，甚        length: 10
+predict: ，者面。螺这            length: 6
+all match:  0
+edit distance:  1.0
+------------------------------
+00000012
+input:   漫游指南》，这不是一        length: 10
+predict: 漫游指南》，这不是一        length: 10
+all match:  1
+edit distance:  0.0
+------------------------------
+00000013
+input:   ，在它的封面上以大而        length: 10
+predict: 版以惨               length: 3
+all match:  0
+edit distance:  0.8999999761581421
+------------------------------
+00000014
+input:   够准确的信息，但它却        length: 10
+predict: ，的在，但片惨           length: 7
+all match:  0
+edit distance:  0.699999988079071
+------------------------------
+00000015
+input:   一问题曾提出过各种各        length: 10
+predict: 在一问题问提出题各问种各阳     length: 13
+all match:  0
+edit distance:  0.5
+------------------------------
+00000016
+input:   事无关。。我们这个故        length: 10
+predict: ，的上。这             length: 5
+all match:  0
+edit distance:  0.800000011920929
+------------------------------
+00000017
+input:   者说曾经存在一个问题        length: 10
+predict: 经存在一个这题           length: 7
+all match:  0
+edit distance:  0.4000000059604645
+------------------------------
+00000018
+input:   螺旋臂的末端那片未曾        length: 10
+predict: ，旋臂的上片凡这          length: 8
+all match:  0
+edit distance:  0.6000000238418579
+------------------------------
+00000019
+input:   版过的最非凡的书了当        length: 10
+predict: 题过的确于的故是曾拥        length: 10
+all match:  0
+edit distance:  0.800000011920929
+------------------------------
+Accuracy: 0.050 (1/20), Average edit distance: 0.747, Average batch time: 0.141

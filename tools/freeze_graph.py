@@ -48,7 +48,8 @@ def main(args):
                 if node.name == "SparseToDense":
                     node.name = "output"
 
-            output_node_names = ["output"]
+            # output_node_names = ["output"]
+            output_node_names = ["o_logits"]
 
             # We use a built-in TF helper to export variables to constants
             output_graph_def = tf.graph_util.convert_variables_to_constants(

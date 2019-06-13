@@ -1,0 +1,28 @@
+CUDA_VISIBLE_DEVICES=1 nohup python3 train.py \
+--tag=2019_06_12 \
+--train_dir=/home/ps/work/git/ocr/text_renderer/output/default \
+--chars_file=./data/chars/chn.txt \
+--cfg_name=dense \
+--val_step=5000 &
+
+CUDA_VISIBLE_DEVICES=1 python3 infer.py \
+--infer_dir=smalldataset \
+--chars_file=./data/chars/chn.txt \
+--infer_batch_size=1 \
+--ckpt_dir=./output/checkpoint \
+--result_dir=./output/result \
+--tag=2019_06_12
+
+
+
+
+python3 train.py --tag=2019_06_12 --train_dir=/Users/dingbingbing/extend/git/ocr/text_renderer/output/default/ --chars_file=./data/chars/chn.txt --cfg_name=dense --val_step=1
+
+
+python tools/freeze_graph.py --ckpt_dir output/checkpoint/2019_06_12/ 
+
+tflite_convert  --graph_def_file=model/crnn.pb --output_format=TFLITE   --output_file=./model.tflite --inference_type=FLOAT --output_arrays=o_logits --input_arrays=inputs --input_shapes=1,32,100,1
+
+
+tflite_convert  --graph_def_file=model/crnn.pb --output_format=GRAPHVIZ_DOT   --output_file=./model.dot --inference_type=FLOAT --output_arrays=o_logits --input_arrays=inputs --input_shapes=1,32,200,1
+

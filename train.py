@@ -81,6 +81,10 @@ class Trainer(object):
                     val_acc = self._do_val(self.val_ds, epoch, global_step, "val")
                     test_acc = self._do_val(self.test_ds, epoch, global_step, "test")
                     self._save_checkpoint(self.args.ckpt_dir, global_step, val_acc, test_acc)
+                    # converter = tf.lite.TFLiteConverter.from_session(self.sess, \
+                    #     [self.model.inputs], [self.model.logits])
+                    # tflite_model = converter.convert()
+                    # open("converted_model.tflite", "wb").write(tflite_model)
 
             self.batch_start_index = 0
 

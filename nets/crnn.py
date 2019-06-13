@@ -77,7 +77,7 @@ class CRNN(object):
             logits = slim.fully_connected(cnn_out_reshaped, self.num_classes, activation_fn=None)
 
         # ctc require time major
-        self.logits = tf.transpose(logits, (1, 0, 2))
+        self.logits = tf.transpose(logits, (1, 0, 2), name='o_logits')
 
     def _build_train_op(self):
         self.global_step = tf.Variable(0, trainable=False)
